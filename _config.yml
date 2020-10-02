@@ -1,0 +1,46 @@
+title: Delta's DCS Reference
+description: 
+url: ""
+
+remote_theme: pmarsceill/just-the-docs
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
+
+plugins:
+  - jekyll-remote-theme
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# collections_dir: mycollections
+
+collections:
+    aircraft:
+        output: true
+    sensors:
+        output: true
+    weapons:
+        output: true
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+
+search_enabled: true
+
+just_the_docs:
+    collections:
+        aircraft:
+            name: Aircraft
+        sensors:
+            name: Sensors
+        weapons:
+            name: Weapons
